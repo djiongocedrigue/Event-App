@@ -1,93 +1,92 @@
 @media only screen and (max-width: 600px) {
-  .myEvent{
-      display: grid;
-      grid-template-rows: repeat(5,auto);
-      grid-template-areas: 
-            "eventDay" 
-            "eventTitle"
-            "eventHour"
-            "eventPlace"
-            "eventDetailsLink";
-      border-bottom: 1px solid rgb(124, 126, 124);  
-      color: rgba(240, 233, 220);  
-      margin-left: 100px;
-      margin-right: 100px;
-      margin-top: 10px;
-      padding-top: 10px;
-      font-family: Cursive;
-    }
-
-    .eventDay{
-      grid-area: "eventDay";
-      text-justify: newspaper;
-      font-weight: bold;
-      font-size: medium; 
-    } 
-
-    .eventTitle{
-      grid-area: "eventTitle";
-      border-bottom: 1px solid rgb(124, 126, 124);
-      font-weight: bold;
-      padding-bottom: 10px;
-    }
-
-    .eventHour {
-      grid-area: "eventHour";
-      border-bottom: 1px solid rgb(124, 126, 124);
-      width: fit-content;
-      font-weight: bold;  
-      padding-bottom: 1px;
-    }
-    .eventPlace{
-      grid-area: "eventPlace";
-      font-size: smaller;
-    }
-
-    .detailsLink{
-      grid-area: "eventDetailsLink";
-      cursor: pointer;
-      color: rgb(241, 134, 12);
-      font-weight: bold;
-      font-size: medium;
-      padding-bottom: 10px;
-    }
-
-    .eventDescription{
-      display: none;
-    }
- }
-  
-@media only screen and (min-width: 600px) {
-  .myEvent{
+  .myEvent {
     display: grid;
-    grid-template-columns:  50px 1fr 0.55fr;
-    grid-template-rows:     auto auto auto;
-    grid-template-areas: 
-          "eventDay   eventTitle        eventHour" 
-          "eventDay   eventDescription  eventPlace"
-          "eventDay   eventDetailsLink  eventDetailsLink"
-          ;
-    border-bottom: 1px solid rgb(124, 126, 124);  
-    color: rgba(240, 233, 220);  
-    padding: 5px;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "eventDay"
+      "eventTitle"
+      "eventHour"
+      "eventPlace"
+      "eventDetailsLink";
+    border-bottom: 1px solid rgb(124, 126, 124);
+    color: rgba(240, 233, 220);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    padding-top: 10px;
     font-family: Cursive;
-    margin-left:  100px;
-    margin-right: 150px; 
   }
 
-  .eventDay{
+  .eventDay {
+    grid-area: "eventDay";
+    text-justify: newspaper;
+    font-weight: bold;
+    font-size: medium;
+  }
+
+  .eventTitle {
+    grid-area: "eventTitle";
+    border-bottom: 1px solid rgb(124, 126, 124);
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  .eventHour {
+    grid-area: "eventHour";
+    border-bottom: 1px solid rgb(124, 126, 124);
+    width: fit-content;
+    font-weight: bold;
+    padding-bottom: 1px;
+  }
+  .eventPlace {
+    grid-area: "eventPlace";
+    font-size: smaller;
+  }
+
+  .detailsLink {
+    grid-area: "eventDetailsLink";
+    cursor: pointer;
+    color: rgb(241, 134, 12);
+    font-weight: bold;
+    font-size: medium;
+    padding-bottom: 10px;
+  }
+
+  .eventDescription {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .myEvent {
+    display: grid;
+    grid-template-columns: 50px 1fr 0.55fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "eventDay   eventTitle        eventHour"
+      "eventDay   eventDescription  eventPlace"
+      "eventDay   eventDetailsLink  eventDetailsLink";
+    border-bottom: 1px solid rgb(124, 126, 124);
+    color: rgba(240, 233, 220);
+    padding: 5px;
+    font-family: Cursive;
+    margin-left: 100px;
+    margin-right: 150px;
+  }
+
+  .eventDay {
     grid-row: span 3;
     grid-area: "eventDay";
     justify-content: center;
     align-items: center;
     text-justify: newspaper;
     font-weight: bold;
-    font-size: medium; 
+    font-size: medium;
     padding-left: 25px;
-    padding-top: 25px; 
-  } 
+    padding-top: 25px;
+  }
 
-  .eventTitle{
+  .eventTitle {
     grid-area: "eventTitle";
     border-bottom: 1px solid rgb(124, 126, 124);
     margin-left: 50px;
@@ -95,7 +94,7 @@
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 15px;
-    padding-bottom: 10px;  
+    padding-bottom: 10px;
     font-weight: bold;
   }
 
@@ -107,28 +106,24 @@
     text-align: right;
     align-items: right;
     align-self: right;
-    font-weight: bold;  
+    font-weight: bold;
     margin-left: 30px;
     margin-right: 30px;
     padding-top: 15px;
     padding-bottom: 10px;
-    position: relative; 
-    right: 1%;   
-    background-color: rgb(231, 130, 35);
   }
-  .eventPlace{
+  .eventPlace {
     grid-area: "eventPlace";
     padding-top: 10px;
     font-size: smaller;
     margin-left: 30px;
     margin-right: 30px;
     padding-top: 25px;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
     text-align: right;
-    background-color: lightcoral;
   }
 
-  .detailsLink{
+  .detailsLink {
     grid-area: "eventDay";
     cursor: pointer;
     color: rgb(241, 134, 12);
@@ -144,7 +139,7 @@
     flex-direction: column;
   }
 
-  .eventDescription{
+  .eventDescription {
     grid-area: "eventDetailsLink";
     margin-left: 50px;
     margin-right: 10px;
