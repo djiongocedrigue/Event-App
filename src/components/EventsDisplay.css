@@ -1,0 +1,18 @@
+.EventDisplayPage{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+                        "title"
+                        "content";
+  
+}
+.EventDisplayTitle{
+  grid-area: "title";
+  color: rgba(240, 233, 220); 
+  text-justify: newspaper;
+  font-weight: bold; 
+  text-align: center;
+}
+.Events{
+  grid-area: "content";
+}
